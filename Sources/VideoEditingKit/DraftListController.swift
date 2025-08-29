@@ -14,7 +14,7 @@ public class DraftListController: UIViewController {
     
     private var draftsArray: [VideoEditingState]? {
         didSet {
-            collectionView?.reloadData()
+            collectionView.reloadData()
         }
     }
     
