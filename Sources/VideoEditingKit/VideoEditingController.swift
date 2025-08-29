@@ -59,7 +59,7 @@ public class VideoEditingController: UIViewController {
         view.backgroundColor = .black
         
         playerLayer = AVPlayerLayer(player: player)
-        playerLayer.videoGravity = .resizeAspectFit
+        playerLayer.videoGravity = .resizeAspect
         view.layer.addSublayer(playerLayer)
         
         canvasImageView = UIImageView()
@@ -202,19 +202,19 @@ public class VideoEditingController: UIViewController {
     }
     
     public func saveDraft() -> Bool {
-        let canvasFrame = NSStringFromCGRect(canvasImageView.frame)
+        let canvasFrame = NSCoder.string(for: canvasImageView.frame)
         let textViewsData = canvasImageView.subviews.compactMap { subview -> TextViewState? in
             guard let textView = subview as? UITextView else { return nil }
             
             return TextViewState(
                 text: textView.text,
                 attributedText: try? NSKeyedArchiver.archivedData(withRootObject: textView.attributedText, requiringSecureCoding: false),
-                frame: NSStringFromCGRect(textView.frame),
-                bounds: NSStringFromCGRect(textView.bounds),
-                center: NSStringFromCGPoint(textView.center),
-                transform: NSStringFromCGAffineTransform(textView.transform),
+                frame: NSCoder.string(for: textView.frame),
+                bounds: NSCoder.string(for: textView.bounds),
+                center: NSCoder.string(for: textView.center),
+                transform: NSCoder.string(for: textView.transform),
                 textAlignment: textView.textAlignment.rawValue,
-                contentSize: NSStringFromCGSize(textView.contentSize),
+                contentSize: NSCoder.string(for: textView.contentSize),
                 tag: textView.tag,
                 backgroundColorString: textView.backgroundColor?.hexString ?? "#FFFFFF",
                 fontURLString: nil
@@ -223,7 +223,7 @@ public class VideoEditingController: UIViewController {
         
         let draft = VideoEditingState(
             videoTag: uniqueId,
-            videoURL: videoAsset.url?.lastPathComponent ?? "",
+            videoURL: (videoAsset as? AVURLAsset)?.url.lastPathComponent ?? "",
             canvasFrame: canvasFrame,
             textViewsData: textViewsData,
             rangeDict: rangeDict,

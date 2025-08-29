@@ -5,7 +5,7 @@ import AVFoundation
 public class AudioRecorder: ObservableObject {
     
     private var audioRecorder: AVAudioRecorder?
-    private var audioPlayer: AVPlayer?
+    public var audioPlayer: AVPlayer?
     
     @Published public var isRecording = false
     @Published public var audioArray: [AudioModel] = []
