@@ -1,6 +1,9 @@
 import XCTest
 @testable import VideoEditingKit
 import AVFoundation
+#if canImport(UIKit)
+import UIKit
+#endif
 
 @available(iOS 14.0, *)
 final class VideoEditingKitTests: XCTestCase {
@@ -124,12 +127,14 @@ final class VideoEditingKitTests: XCTestCase {
         XCTAssertFalse(noDataError.localizedDescription.isEmpty)
     }
     
+    #if canImport(UIKit)
     func testUIColorHexString() throws {
         let redColor = UIColor.red
         let hexString = redColor.hexString
         
         XCTAssertEqual(hexString, "#FF0000")
     }
+    #endif
     
     func testFileManagerRemoveIfExists() throws {
         let tempURL = FileManager.default.temporaryDirectory.appendingPathComponent("test.txt")

@@ -1,0 +1,12 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "c55ca748c96d901cc98ed6af2508292f234210d84b2e10a565fae9294d00ce7c"
+build_start_time: [1756468509, 321966000]
+build_end_time: [1756468514, 615957000]
+inputs:
+  "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/AudioRecorder.swift": [1756467321, 17559716]
+  "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/DraftListController.swift": [1756465911, 632704362]
+  "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/DraftManager.swift": [1756466099, 270646764]
+  "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/Models.swift": [1756466056, 658480029]
+  "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/VideoComposer.swift": [1756465960, 320049442]
+  "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/VideoEditingController.swift": [1756467428, 748340916]
+  "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/VideoEditingKit.swift": [1756466008, 808658064]

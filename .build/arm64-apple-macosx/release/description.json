@@ -1,0 +1,707 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.xctest/Contents/MacOS/VideoEditingKitPackageTests",
+      "packagePath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing",
+      "productName" : "VideoEditingKitPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.VideoEditingKit-arm64-apple-macosx15.0-release.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/sources",
+      "importPath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/AudioRecorder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/DraftListController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/DraftManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/Models.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/VideoComposer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/VideoEditingController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/VideoEditingKit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "VideoEditingKit",
+      "moduleOutputPath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/Modules/VideoEditingKit.swiftmodule",
+      "objects" : [
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/AudioRecorder.swift.o",
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/DraftListController.swift.o",
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/DraftManager.swift.o",
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/Models.swift.o",
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/VideoComposer.swift.o",
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/VideoEditingController.swift.o",
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/VideoEditingKit.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx11.0",
+        "-O",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-module-cache-path",
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/VideoEditingKit-Swift.h",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "videoediting"
+      ],
+      "outputFileMapPath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/AudioRecorder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/DraftListController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/DraftManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/Models.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/VideoComposer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/VideoEditingController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/VideoEditingKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/Modules/VideoEditingKit.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/AudioRecorder.swift",
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/DraftListController.swift",
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/DraftManager.swift",
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/Models.swift",
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/VideoComposer.swift",
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/VideoEditingController.swift",
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/VideoEditingKit.swift"
+      ],
+      "tempsPath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build",
+      "wholeModuleOptimization" : true
+    },
+    "C.VideoEditingKitPackageTests-arm64-apple-macosx15.0-release.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.build/sources",
+      "importPath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/Modules/VideoEditingKitTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "VideoEditingKitPackageTests",
+      "moduleOutputPath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/Modules/VideoEditingKitPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx11.0",
+        "-O",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-module-cache-path",
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.build/VideoEditingKitPackageTests-Swift.h",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "videoediting"
+      ],
+      "outputFileMapPath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/Modules/VideoEditingKitPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.build",
+      "wholeModuleOptimization" : true
+    },
+    "C.VideoEditingKitTests-arm64-apple-macosx15.0-release.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitTests.build/sources",
+      "importPath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Tests/VideoEditingKitTests/VideoEditingKitTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/Modules/VideoEditingKit.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "VideoEditingKitTests",
+      "moduleOutputPath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/Modules/VideoEditingKitTests.swiftmodule",
+      "objects" : [
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitTests.build/VideoEditingKitTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-index-store-path",
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/index/store",
+        "-O",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-module-cache-path",
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "videoediting"
+      ],
+      "outputFileMapPath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitTests.build/VideoEditingKitTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/Modules/VideoEditingKitTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Tests/VideoEditingKitTests/VideoEditingKitTests.swift"
+      ],
+      "tempsPath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitTests.build",
+      "wholeModuleOptimization" : true
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "VideoEditingKit" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "VideoEditingKit",
+      "-package-name",
+      "videoediting",
+      "-whole-module-optimization",
+      "-num-threads",
+      "8",
+      "-c",
+      "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/AudioRecorder.swift",
+      "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/DraftListController.swift",
+      "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/DraftManager.swift",
+      "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/Models.swift",
+      "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/VideoComposer.swift",
+      "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/VideoEditingController.swift",
+      "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/VideoEditingKit.swift",
+      "-I",
+      "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/Modules",
+      "-target",
+      "arm64-apple-macosx11.0",
+      "-O",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-module-cache-path",
+      "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/VideoEditingKit-Swift.h",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "videoediting",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "VideoEditingKitPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "VideoEditingKitPackageTests",
+      "-package-name",
+      "videoediting",
+      "-whole-module-optimization",
+      "-num-threads",
+      "8",
+      "-c",
+      "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/Modules",
+      "-target",
+      "arm64-apple-macosx11.0",
+      "-O",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-module-cache-path",
+      "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.build/VideoEditingKitPackageTests-Swift.h",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "videoediting",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "VideoEditingKitTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "VideoEditingKitTests",
+      "-package-name",
+      "videoediting",
+      "-whole-module-optimization",
+      "-num-threads",
+      "8",
+      "-c",
+      "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Tests/VideoEditingKitTests/VideoEditingKitTests.swift",
+      "-I",
+      "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-index-store-path",
+      "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/index/store",
+      "-O",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-module-cache-path",
+      "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "videoediting",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "VideoEditingKit" : [
+
+    ],
+    "VideoEditingKitPackageTests" : [
+      "VideoEditingKitTests",
+      "VideoEditingKit"
+    ],
+    "VideoEditingKitTests" : [
+      "VideoEditingKit"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/AudioRecorder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/DraftListController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/DraftManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/Models.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/VideoComposer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/VideoEditingController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/VideoEditingKit.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/sources"
+    },
+    "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.build/sources"
+    },
+    "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/AudioRecorder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/DraftListController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/DraftManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/Models.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/VideoComposer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/VideoEditingController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKit.build/VideoEditingKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitTests.build/VideoEditingKitTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Tests/VideoEditingKitTests/VideoEditingKitTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitTests.build/sources"
+    },
+    "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

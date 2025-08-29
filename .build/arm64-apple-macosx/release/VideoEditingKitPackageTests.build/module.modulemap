@@ -1,0 +1,4 @@
+module VideoEditingKitPackageTests {
+    header "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/release/VideoEditingKitPackageTests.build/VideoEditingKitPackageTests-Swift.h"
+    requires objc
+}
