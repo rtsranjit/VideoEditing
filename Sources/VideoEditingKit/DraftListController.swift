@@ -7,7 +7,10 @@ public class DraftListController: UIViewController {
     private lazy var closeButton = UIButton()
     private lazy var titleLabel = UILabel()
     private lazy var infoButton = UIButton()
-    private lazy var collectionView: UICollectionView!
+    private lazy var collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        return UICollectionView(frame: .zero, collectionViewLayout: layout)
+    }()
     
     private var draftsArray: [VideoEditingState]? {
         didSet {
@@ -88,7 +91,7 @@ public class DraftListController: UIViewController {
     }
     
     private func setupCollectionView() {
-        let layout = UICollectionViewFlowLayout()
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.sectionInset = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
         
         let numberOfItems: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 4 : 2
@@ -100,7 +103,6 @@ public class DraftListController: UIViewController {
         layout.minimumInteritemSpacing = spacing
         layout.minimumLineSpacing = spacing
         
-        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.backgroundColor = .clear
         collectionView.dataSource = self
