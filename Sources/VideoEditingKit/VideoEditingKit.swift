@@ -1,6 +1,8 @@
 import Foundation
-import UIKit
 import AVFoundation
+#if canImport(UIKit)
+import UIKit
+#endif
 
 @available(iOS 14.0, *)
 public class VideoEditingKit {
@@ -8,10 +10,12 @@ public class VideoEditingKit {
     
     private init() {}
     
+    #if canImport(UIKit)
     public func createVideoEditor(with videoURL: URL, uniqueId: String? = nil) -> VideoEditingController {
         let editor = VideoEditingController(videoURL: videoURL, uniqueId: uniqueId ?? UUID().uuidString)
         return editor
     }
+    #endif
     
     public func getDrafts() -> [VideoEditingState]? {
         return DraftManager.shared.getDraftsArray()
@@ -22,6 +26,7 @@ public class VideoEditingKit {
     }
 }
 
+#if canImport(UIKit)
 public extension UIView {
     func asImage() -> UIImage {
         let renderer = UIGraphicsImageRenderer(bounds: bounds)
@@ -43,6 +48,7 @@ public extension UIButton {
         }
     }
 }
+#endif
 
 public extension FileManager {
     func removeItemIfExisted(_ url: URL) {

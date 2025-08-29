@@ -1,6 +1,5 @@
 import Foundation
 import AVFoundation
-import UIKit
 
 @available(iOS 14.0, *)
 public class AudioRecorder: ObservableObject {
@@ -23,6 +22,7 @@ public class AudioRecorder: ObservableObject {
     }
     
     private func setupAudioSession() {
+        #if os(iOS) || os(tvOS) || os(watchOS)
         let audioSession = AVAudioSession.sharedInstance()
         do {
             try audioSession.setCategory(.playAndRecord, mode: .default)
@@ -30,6 +30,7 @@ public class AudioRecorder: ObservableObject {
         } catch {
             print("Failed to setup audio session: \(error)")
         }
+        #endif
     }
     
     public func startRecording(at startTime: Double, uniqueId: String, completion: @escaping (Result<String, Error>) -> Void) {

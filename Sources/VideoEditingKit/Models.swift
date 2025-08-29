@@ -1,6 +1,8 @@
 import Foundation
-import UIKit
 import AVFoundation
+#if canImport(UIKit)
+import UIKit
+#endif
 
 public struct VideoEditingState: Codable {
     public let videoTag: String
@@ -59,12 +61,17 @@ public struct TextViewState: Codable {
     public let bounds: String
     public let center: String
     public let transform: String
+    #if canImport(UIKit)
     public let textAlignment: NSTextAlignment.RawValue
+    #else
+    public let textAlignment: Int
+    #endif
     public let contentSize: String
     public let tag: Int
     public let backgroundColorString: String
     public let fontURLString: String?
     
+    #if canImport(UIKit)
     public init(text: String?, attributedText: Data?, frame: String, bounds: String, center: String, transform: String, textAlignment: NSTextAlignment.RawValue, contentSize: String, tag: Int, backgroundColorString: String, fontURLString: String?) {
         self.text = text
         self.attributedText = attributedText
@@ -78,6 +85,21 @@ public struct TextViewState: Codable {
         self.backgroundColorString = backgroundColorString
         self.fontURLString = fontURLString
     }
+    #else
+    public init(text: String?, attributedText: Data?, frame: String, bounds: String, center: String, transform: String, textAlignment: Int, contentSize: String, tag: Int, backgroundColorString: String, fontURLString: String?) {
+        self.text = text
+        self.attributedText = attributedText
+        self.frame = frame
+        self.bounds = bounds
+        self.center = center
+        self.transform = transform
+        self.textAlignment = textAlignment
+        self.contentSize = contentSize
+        self.tag = tag
+        self.backgroundColorString = backgroundColorString
+        self.fontURLString = fontURLString
+    }
+    #endif
 }
 
 public struct TextViewStateDuration: Codable {

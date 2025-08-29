@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKitPackageTests.build/master.swiftdeps"
+  },
+  "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKitPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKitPackageTests.build/runner.d",
+    "object": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKitPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKitPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKitPackageTests.build/runner.swiftdeps"
+  }
+}

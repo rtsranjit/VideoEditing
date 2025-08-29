@@ -1,0 +1,4 @@
+module VideoEditingKit {
+    header "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/VideoEditingKit-Swift.h"
+    requires objc
+}

@@ -1,0 +1,47 @@
+{
+  "": {
+    "swift-dependencies": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/master.swiftdeps"
+  },
+  "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/AudioRecorder.swift": {
+    "dependencies": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/AudioRecorder.d",
+    "object": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/AudioRecorder.swift.o",
+    "swiftmodule": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/AudioRecorder~partial.swiftmodule",
+    "swift-dependencies": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/AudioRecorder.swiftdeps"
+  },
+  "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/DraftListController.swift": {
+    "dependencies": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/DraftListController.d",
+    "object": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/DraftListController.swift.o",
+    "swiftmodule": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/DraftListController~partial.swiftmodule",
+    "swift-dependencies": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/DraftListController.swiftdeps"
+  },
+  "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/DraftManager.swift": {
+    "dependencies": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/DraftManager.d",
+    "object": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/DraftManager.swift.o",
+    "swiftmodule": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/DraftManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/DraftManager.swiftdeps"
+  },
+  "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/Models.swift": {
+    "dependencies": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/Models.d",
+    "object": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/Models.swift.o",
+    "swiftmodule": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/Models~partial.swiftmodule",
+    "swift-dependencies": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/Models.swiftdeps"
+  },
+  "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/VideoComposer.swift": {
+    "dependencies": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/VideoComposer.d",
+    "object": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/VideoComposer.swift.o",
+    "swiftmodule": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/VideoComposer~partial.swiftmodule",
+    "swift-dependencies": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/VideoComposer.swiftdeps"
+  },
+  "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/VideoEditingController.swift": {
+    "dependencies": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/VideoEditingController.d",
+    "object": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/VideoEditingController.swift.o",
+    "swiftmodule": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/VideoEditingController~partial.swiftmodule",
+    "swift-dependencies": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/VideoEditingController.swiftdeps"
+  },
+  "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/Sources/VideoEditingKit/VideoEditingKit.swift": {
+    "dependencies": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/VideoEditingKit.d",
+    "object": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/VideoEditingKit.swift.o",
+    "swiftmodule": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/VideoEditingKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/sveltetech/Downloads/VideoEditing/VideoEditing/.build/arm64-apple-macosx/debug/VideoEditingKit.build/VideoEditingKit.swiftdeps"
+  }
+}

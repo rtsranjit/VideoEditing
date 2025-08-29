@@ -1,5 +1,6 @@
 import Foundation
 import AVFoundation
+#if canImport(UIKit)
 import UIKit
 
 @available(iOS 14.0, *)
@@ -202,6 +203,7 @@ public class VideoComposer {
         }
     }
 }
+#endif
 
 public enum VideoCompositionError: Error {
     case noVideoTrack

@@ -1,4 +1,5 @@
 import Foundation
+#if canImport(UIKit)
 import UIKit
 
 @available(iOS 14.0, *)
@@ -249,3 +250,4 @@ class DraftCell: UICollectionViewCell {
         }
     }
 }
+#endif

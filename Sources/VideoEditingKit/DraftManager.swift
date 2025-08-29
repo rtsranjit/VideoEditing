@@ -1,5 +1,7 @@
 import Foundation
+#if canImport(UIKit)
 import UIKit
+#endif
 
 @available(iOS 14.0, *)
 public class DraftManager {
@@ -76,7 +78,6 @@ public class DraftManager {
     public func saveFileToDocumentDirectory(
         uniqueId: String,
         fileName: String,
-        image: UIImage? = nil,
         file: URL? = nil,
         completion: @escaping (Result<URL, Error>) -> Void
     ) {
@@ -112,22 +113,49 @@ public class DraftManager {
                     completion(.failure(error))
                 }
             }.resume()
-        } else if let image = image {
-            guard let imageData = image.pngData() else {
-                completion(.failure(DraftManagerError.imageConversionFailed))
-                return
-            }
-            
-            do {
-                try imageData.write(to: fileURL)
-                completion(.success(fileURL))
-            } catch {
-                completion(.failure(error))
-            }
         } else {
             completion(.failure(DraftManagerError.noDataProvided))
         }
     }
+    
+    #if canImport(UIKit)
+    public func saveImageToDocumentDirectory(
+        uniqueId: String,
+        fileName: String,
+        image: UIImage,
+        completion: @escaping (Result<URL, Error>) -> Void
+    ) {
+        guard let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
+            completion(.failure(DraftManagerError.documentsDirectoryNotFound))
+            return
+        }
+        
+        let folderPath = documentsDirectory.appendingPathComponent("DraftVideo\(uniqueId)", isDirectory: true)
+        
+        if !FileManager.default.fileExists(atPath: folderPath.path) {
+            do {
+                try FileManager.default.createDirectory(at: folderPath, withIntermediateDirectories: true, attributes: nil)
+            } catch {
+                completion(.failure(error))
+                return
+            }
+        }
+        
+        let fileURL = folderPath.appendingPathComponent(fileName)
+        
+        guard let imageData = image.pngData() else {
+            completion(.failure(DraftManagerError.imageConversionFailed))
+            return
+        }
+        
+        do {
+            try imageData.write(to: fileURL)
+            completion(.success(fileURL))
+        } catch {
+            completion(.failure(error))
+        }
+    }
+    #endif
     
     public func loadFileFromDocumentDirectory(uniqueId: String, fileName: String) -> URL? {
         guard let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {

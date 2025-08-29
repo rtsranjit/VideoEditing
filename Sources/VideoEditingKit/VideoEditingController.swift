@@ -1,6 +1,7 @@
 import Foundation
-import UIKit
 import AVFoundation
+#if canImport(UIKit)
+import UIKit
 
 @available(iOS 14.0, *)
 public class VideoEditingController: UIViewController {
@@ -270,3 +271,4 @@ extension UIColor {
         return hexString
     }
 }
+#endif
