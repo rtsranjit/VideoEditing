@@ -2,8 +2,8 @@
 //  VoiceOverViewController.swift
 //  sesiosnativeapp
 //
-//  Created by Apple on 08/09/23.
-//  Copyright © 2023 SocialEngineSolutions. All rights reserved.
+//  Created by Ranjit Singh on 08/09/23.
+//  Copyright © 2023 rtsranjit. All rights reserved.
 //
 
 import Foundation

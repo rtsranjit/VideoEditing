@@ -250,18 +250,144 @@ public enum DraftManagerError: Error {
 - **Background Processing**: Video export runs asynchronously with progress callbacks
 - **Draft Limits**: Default limit of 10 drafts per user to prevent storage bloat
 
+## SwiftUI Integration
+
+VideoEditingKit provides seamless SwiftUI integration through UIViewControllerRepresentable wrappers:
+
+### Complete SwiftUI Example
+
+```swift
+import SwiftUI
+import VideoEditingKit
+import AVFoundation
+
+struct ContentView: View {
+    @State private var showingVideoPicker = false
+    @State private var showingVideoEditor = false
+    @State private var selectedVideoURL: URL?
+    @State private var draftCount = 0
+    
+    var body: some View {
+        NavigationView {
+            VStack(spacing: 30) {
+                Image(systemName: "video.badge.plus")
+                    .font(.system(size: 80))
+                    .foregroundColor(.blue)
+                
+                Text("VideoEditingKit Demo")
+                    .font(.largeTitle)
+                    .bold()
+                
+                Button("Select Video to Edit") {
+                    checkPermissionsAndShowPicker()
+                }
+                .buttonStyle(PrimaryButtonStyle())
+                
+                Button("View Saved Drafts (\(draftCount))") {
+                    // Show draft list
+                }
+                .buttonStyle(SecondaryButtonStyle())
+            }
+            .padding()
+            .navigationTitle("Video Editor")
+            .onAppear {
+                draftCount = VideoEditingKit.shared.getDrafts()?.count ?? 0
+            }
+        }
+        .sheet(isPresented: $showingVideoPicker) {
+            VideoPicker { url in
+                selectedVideoURL = url
+                showingVideoEditor = true
+            }
+        }
+        .fullScreenCover(isPresented: $showingVideoEditor) {
+            if let videoURL = selectedVideoURL {
+                VideoEditorWrapper(videoURL: videoURL) { success in
+                    // Handle completion
+                }
+            }
+        }
+    }
+    
+    private func checkPermissionsAndShowPicker() {
+        AVAudioSession.sharedInstance().requestRecordPermission { granted in
+            DispatchQueue.main.async {
+                showingVideoPicker = granted
+            }
+        }
+    }
+}
+
+// UIKit Wrappers for SwiftUI
+struct VideoEditorWrapper: UIViewControllerRepresentable {
+    let videoURL: URL
+    let onCompletion: (Bool) -> Void
+    
+    func makeUIViewController(context: Context) -> VideoEditingController {
+        return VideoEditingKit.shared.createVideoEditor(with: videoURL)
+    }
+    
+    func updateUIViewController(_ uiViewController: VideoEditingController, context: Context) {}
+}
+
+struct VideoPicker: UIViewControllerRepresentable {
+    let onVideoSelected: (URL) -> Void
+    
+    func makeUIViewController(context: Context) -> UIImagePickerController {
+        let picker = UIImagePickerController()
+        picker.sourceType = .photoLibrary
+        picker.mediaTypes = ["public.movie"]
+        picker.delegate = context.coordinator
+        return picker
+    }
+    
+    func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {}
+    
+    func makeCoordinator() -> Coordinator { Coordinator(self) }
+    
+    class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+        let parent: VideoPicker
+        init(_ parent: VideoPicker) { self.parent = parent }
+        
+        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+            if let videoURL = info[.mediaURL] as? URL {
+                parent.onVideoSelected(videoURL)
+            }
+            picker.dismiss(animated: true)
+        }
+    }
+}
+```
+
 ## Permissions
 
-Your app will need the following permissions:
+Your app **must** include these privacy usage descriptions in Info.plist to avoid crashes:
+
+### Required Info.plist Entries
 
 ```xml
 <!-- Info.plist -->
 <key>NSMicrophoneUsageDescription</key>
-<string>This app needs microphone access to record voice-overs for videos.</string>
+<string>This app needs access to the microphone to record voice-over audio for video editing.</string>
 
 <key>NSPhotoLibraryUsageDescription</key>
-<string>This app needs photo library access to save edited videos.</string>
+<string>This app needs access to your photo library to select videos for editing.</string>
+
+<key>NSCameraUsageDescription</key>
+<string>This app needs access to the camera to record videos for editing.</string>
 ```
+
+### Adding via Xcode
+
+1. Open your project in Xcode
+2. Select your app target
+3. Go to the **Info** tab
+4. Click **+** to add:
+   - **Privacy - Microphone Usage Description**
+   - **Privacy - Photo Library Usage Description** 
+   - **Privacy - Camera Usage Description**
+
+**⚠️ Important**: Without these entries, your app will crash when requesting permissions.
 
 ## Example Project
 

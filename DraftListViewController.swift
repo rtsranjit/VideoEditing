@@ -2,8 +2,8 @@
 //  DraftListViewController.swift
 //  sesiosnativeapp
 //
-//  Created by APPLE AHEAD on 29/03/24.
-//  Copyright © 2024 SocialEngineSolutions. All rights reserved.
+//  Created by Ranjit Singh on 29/03/24.
+//  Copyright © 2024 rtsranjit. All rights reserved.
 //
 
 import Foundation

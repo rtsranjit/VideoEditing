@@ -2,8 +2,8 @@
 //  UserEditingVideoViewController.swift
 //  sesiosnativeapp
 //
-//  Created by Apple on 23/08/23.
-//  Copyright © 2023 SocialEngineSolutions. All rights reserved.
+//  Created by Ranjit Singh on 23/08/23.
+//  Copyright © 2023 rtsranjit. All rights reserved.
 //
 
 import Foundation
